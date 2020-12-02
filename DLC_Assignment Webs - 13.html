@@ -8,72 +8,11 @@
     <link rel="shortcut icon" href="img/logoA.png">
     <!----- ICONS ----->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-    
-    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-    
-    a {
-      text-decoration: none;
-      display: inline-block;
-      padding: 8px 16px;
-    }
-    
-    a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    .previous {
-      background-color: #f1f1f1;
-      color: black;
-    }
-    
-    .next {
-      background-color: #000000;
-      color: white;
-    }
-    
-    .round {
-      border-radius: 50%;
-    }
-    /*SOCIAL MEDIA ICONS*/
-    
-    footer.fa {
-      padding: 7px;
-      font-size: 15px;
-      width: 30px;
-      text-align: center;
-      text-decoration: none;
-      margin: 3px 1px;
-
-    }
-
-    footer.fa:hover {
-      opacity: 0.9;
-    }
-
-    footer.fa-facebook {
-      color: white;
-    }
-
-    footer.fa-twitter {
-      color: white;
-    }
-
-    footer.fa-google {
-      color: white;
-    }
-
-    footer.fa-instagram {
-      color: white;
-    }
-
-    footer.fa-pinterest {
-      color: white;
-    }
-
-</style>
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- script -->
+    <script type="text/javascript" src="script.js"></script>
+ 
 <body class="w3-light-grey">
 
 <!-- w3-content defines a container for fixed size centered content, 
@@ -84,6 +23,19 @@ and is wrapped around the whole page content, except for the footer in this exam
 <header class="w3-container w3-center w3-padding-32"> 
   <h1><b>PERSONAL BRANDING</b></h1>
   <p>Welcome to the website of <span class="w3-tag">Annisa Nurdiana</span></p>
+<br><br><br>
+<div class="topnav">
+  <a href="#home" class="active"><b>HELLO EVERYONE !</b></a>
+  <div id="myLinks">
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#download">Download</a>
+    <a href="#pop">Popular</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 </header>
 
 <!-- Grid -->
@@ -93,7 +45,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img id="one" src="img/photo1.jpg" alt="How do others see my Personal Branding?" style="width:850px">
+    <img id="one" src="img/photo1.jpg" alt="How do others see my Personal Branding?" style="width:100%">
     <div class="w3-container">
       <h3 ><b>How do others see my Personal Branding?</b></h3>
       <h5> <span class="w3-opacity">November 20, 2020</span></h5>
@@ -125,7 +77,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img id="three" src="img/photo3.jpg" alt="What makes me is me?" style="width:850px">
+    <img id="three" src="img/photo3.jpg" alt="What makes me is me?" style="width:100%">
     <div class="w3-container">
       <h3 ><b>What makes me is me?</b></h3>
       <h5> <span class="w3-opacity">November 20, 2020</span></h5>
@@ -163,7 +115,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l4">
   <!-- About Card -->
   <div class="w3-card w3-margin w3-margin-top">
-  <img src="img/aboutMe.gif" style="width:100%">
+  <img id="about" src="img/aboutMe.gif" style="width:100%">
     <div class="w3-container w3-white">
       <h4><b>About Me:</b></h4>
       <p>Hello! Allow me introduce myself. My name is Annisa Nurdiana. I am a student in President University majoring in Information Technology class 3 batch 2020.</p>
@@ -173,7 +125,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Posts -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
-      <h4>Popular Posts</h4>
+      <h4 id="pop">Popular Posts</h4>
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
@@ -202,7 +154,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <h4>Tags</h4>
     </div>
     <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Brand</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Personal</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Human</span>
+    <p><span href="#" class="w3-tag w3-black w3-margin-bottom">Personal</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Brand</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Human</span>
       <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Love</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Think</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mode</span>
       <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Happy</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
       <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Social</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Public</span>
@@ -210,7 +162,68 @@ and is wrapped around the whole page content, except for the footer in this exam
     </p>
     </div>
   </div>
-  
+
+<div class="w3-card w3-margin">
+<div class="w3-container w3-padding">
+  <h4 id="contact">Contact Me:</h4></div>
+  <div class="w3-container w3-white"><br>
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your email...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="usa">USA</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Indonesia</option>
+          <option value="usa">Canada</option>
+          <option value="usa">other</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Messege</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something . . ." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row"><br>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</div>
+
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4 id="download">Download</h4>
+    </div>
+    <div class="w3-container w3-white">
+      <div class="row"><br><br><a href="folder/DownloadPngVersion.png" download="Digital CV">Download Page >> png.version</a> </div>
+      <div><a href="folder/DownloadPdfVersion.pdf" download="Digital CV">Download Page >> pdf version.</a></div><br>
+    </div>
+  </div>
+
 <!-- END Introduction Menu -->
 </div>
 
